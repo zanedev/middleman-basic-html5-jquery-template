@@ -1,6 +1,6 @@
 # Basic HTML5 Middleman template
 
-## What is it?
+## What is this?
 
 The template I use for a basic static site generation with [Middleman](http://middlemanapp.com)
 
