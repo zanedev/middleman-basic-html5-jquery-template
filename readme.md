@@ -20,6 +20,6 @@ Differs from the default «html5» template in some ways:
 
 ## Usage
 
-`middleman init project_name --template=mesen-middleman-template`
+`middleman init project_name --middleman-basic-html5-jquery-template`
 
 See the [Middleman documentation](http://middlemanapp.com/guides/getting-started) for how to use Middleman. 
