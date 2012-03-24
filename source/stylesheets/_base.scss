@@ -1,0 +1,82 @@
+@import "compass";
+
+$link-color:         #1985EA;
+$link-hover-color:   false;
+$link-focus-color:   true;
+$link-active-color:  false;
+$link-visited-color: false;
+
+$heading-font-size: 24px;
+$heading2-font-size: 20px;
+$heading3-font-size: 18px;
+$heading4-font-size: 16px;
+$heading5-font-size: 14px;
+
+$base-font-family: "Helvetica, Arial, sans-serif";
+$base-font-color: #333;
+$base-font-size:   14px;
+
+@mixin font-dropshadow {
+  text-shadow: 1px 1px 3px #636363;
+  filter: dropshadow(color=#636363, offx=1, offy=1);
+}
+
+body, html {
+    height:100%;
+    width:100%;    
+}
+
+body, p {
+    font-family: $base-font-family;
+    color: $base-font-color;
+    font-size: $base-font-size;
+    color: $base-font-color;
+    line-height: 135%;
+    font-weight: 300;
+}
+
+a {  
+  @include link-colors($link-color, $link-hover-color, $link-focus-color, $link-active-color, $link-visited-color);
+  @include hover-link;
+  outline:none;
+}
+
+h1 {
+  font-size:$heading-font-size;
+}
+h2 {
+  font-size:$heading2-font-size;
+}
+h3 {
+  font-size:$heading3-font-size;
+  margin-bottom:15px;
+}
+h4 {
+  font-size:$heading4-font-size;
+  margin-bottom:15px;
+}
+h5 {
+  font-size:$heading5-font-size;
+}
+
+.bigbold {
+  font-size:16px;
+  font-weight: 500;
+}
+
+.biggerbold {
+  font-size:18px;
+  font-weight: 500;
+}
+
+.clear {
+	clear:both;
+}
+
+/*fix transparent png weirdness with IE*/
+img, button {
+    background: transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);   /* IE6 & 7 */
+    zoom: 1;
+}
