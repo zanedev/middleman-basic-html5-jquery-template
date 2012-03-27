@@ -11,9 +11,9 @@ class root.MyApp
 class _MyApp
   constructor: (@args) ->
 
-  init: ->
+  echo: ->
     @args
 
 jQuery ->
-  a = root.MyApp.init 'hello coffeescript!'
+  a = root.MyApp.get 'hello coffeescript!'
   alert a.echo()
