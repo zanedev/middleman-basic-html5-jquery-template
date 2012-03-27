@@ -1,6 +1,8 @@
 @import "compass";
 
-$link-color:         #1985EA;
+$header-nav-font-size: 18px;
+
+$link-color:         #0087ca;
 $link-hover-color:   false;
 $link-focus-color:   true;
 $link-active-color:  false;
@@ -12,7 +14,7 @@ $heading3-font-size: 18px;
 $heading4-font-size: 16px;
 $heading5-font-size: 14px;
 
-$base-font-family: "Helvetica, Arial, sans-serif";
+$base-font-family: helvetica, arial, sans-serif;
 $base-font-color: #333;
 $base-font-size:   14px;
 
@@ -30,7 +32,6 @@ body, p {
     font-family: $base-font-family;
     color: $base-font-color;
     font-size: $base-font-size;
-    color: $base-font-color;
     line-height: 135%;
     font-weight: 300;
 }
@@ -71,6 +72,10 @@ h5 {
 
 .clear {
 	clear:both;
+}
+
+strong {
+  font-weight: bold;
 }
 
 /*fix transparent png weirdness with IE*/
